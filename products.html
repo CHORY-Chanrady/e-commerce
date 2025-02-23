@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - MyShop</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">MyShop</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="product-list">
+    <h2>Our Products</h2>
+    <div class="products">
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="assets/Images/EASE EGM110 Gaming Mouse.jpg" alt="EASE EGM110 Gaming Mouse" class="product-image">
+        <h3>EASE EGM110 Gaming Mouse</h3>
+        <p>$20.00</p>
+        <button onclick="addToCart('egm110', 'EASE EGM110 Gaming Mouse', 20, 'EASE EGM110 Gaming Mouse.jpg')">Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="assets/Images/RPM Euro Games Gaming Keyboard.jpg" alt="RPM Euro Games Gaming Keyboard" class="product-image">
+        <h3>RPM Euro Games Gaming Keyboard</h3>
+        <p>$30.00</p>
+        <button onclick="addToCart('rpm-keyboard', 'RPM Euro Games Gaming Keyboard', 30, 'RPM Euro Games Gaming Keyboard.jpg')">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <img src="assets/Images/monitor 34.jpg" alt="Mintor 34 inches" class="product-image">
+        <h3>Mintor 34 inches</h3>
+        <p>$325.00</p>
+        <button onclick="addToCart('monitor-34', 'Mintor 34 inches', 325, 'monitor 34.jpg')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 MyShop. All rights reserved.</p>
+  </footer>
+</body>
+</html>

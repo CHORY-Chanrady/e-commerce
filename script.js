@@ -53,7 +53,7 @@ function renderCartItems() {
       const cartItem = document.createElement('div');
       cartItem.classList.add('cart-item');
       cartItem.innerHTML = `
-        <img src="assets/Images/${item.image}" alt="${item.name}">
+        <img src="Assets/Images/${item.image}" alt="${item.name}">
         <div class="item-details">
           <h3>${item.name}</h3>
           <p>$${item.price.toFixed(2)} x ${item.quantity}</p>
